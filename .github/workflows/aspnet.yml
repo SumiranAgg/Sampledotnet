@@ -22,7 +22,7 @@ jobs:
       
     # dotnet msbuild and publish
     - name: msBuild with dotnet
-      run: C:\"Program Files (x86)"\"Microsoft Visual Studio"\2019\Enterprise\MSBuild\Current\Bin\msbuild.exe ".\SampleWebApplication\SampleWebApplication.csproj"
+      run: C:\"Program Files (x86)"\"Microsoft Visual Studio"\2019\Enterprise\MSBuild\Current\Bin\msbuild.exe ".\SampleWebApplication.sln" /p:DeployDefaultTarget=WebPublish
       shell: cmd
     
     # dotnet build and publish
